@@ -9,12 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel=" shortcut icon" href="favicon/android-icon-96x96.png">
     <link rel="icon" href="favicon/android-icon-96x96.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src= "js/script.js" defer></script>
 </head>
 <body>
-    <p> (min-width: 320px) and (max-width: 480px) 로 확인하세요. </p>
+    <p> (min-width: 320px) and (max-width: 480px) 로 확인하세요. <br>
+        개발자 모드 > iPhone 6/7/8 Plus 권장
+    </p>
+
+    <!-- 
+        6/17일 수정할 내용
+        1. 메타태그
+        2. class name 수정
+        3. toggle 스크립트 작성
+     -->
     <div class="main">
         <div class="mainNav">
             <div class="rightNav">
@@ -97,7 +107,50 @@
                 
             </div>
             <div class="inbox2">
-                <div class="a"> <h4>국가 / 지역</h4></div>
+                <div class="a"> 
+                    <div class="a1"> 
+                        <h4>국가 / 지역</h4>
+                        <div class="countrySelect">
+                            <div class="flagMain"></div>
+                            <i class="fas fa-chevron-down countSel"></i>
+                        </div>
+                        <div class="whatChoose">South Korea</div>
+                        <div class="countryList">
+                            <ul>
+                                <li> <img src="img/flag/United Kingdom.png" alt=""> <a href="#">United Kingdom</a></li>
+                                <li> <img src="img/flag/België.png" alt=""> <a href="#">België</a></li>
+                                <li> <img src="img/flag/Canada.png" alt=""> <a href="#">Canada</a></li>
+                                <li> <img src="img/flag/Danmark.png" alt=""> <a href="#">Danmark</a></li>
+                                <li> <img src="img/flag/Deutschland.png" alt=""> <a href="#">Deutschland</a></li>
+                                <li> <img src="img/flag/Eesti.png" alt=""> <a href="#">Eesti</a></li>
+                                <li class="lastLi"> <img src="img/flag/España.png" alt=""> <a href="#">España</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="a2"> 
+                        <h4>언어</h4>
+                        <div class="languageSelect">
+                            <h3>한국어</h3>
+                            <i class="fas fa-chevron-down langSel"></i>
+                        </div>
+                        <div class="languageList">
+                            <ul>
+                                <li><a href="#"> Dansk</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Español</a></li>
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Italiano</a></li>
+                                <li><a href="#">Pусский</a></li>
+                                <li><a href="#">한국어</a></li>
+                                <li><a href="#">中文</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">简体中文</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="b">
                     <h4>고객 관리</h4>
                     <ul>
@@ -135,10 +188,19 @@
                 </div>
             </div>
             <div class="inbox3">
-              아이콘들 여기에 
+                <ul>
+                    <li class="logoSns"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="logoSns"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="logoSns"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="logoSns"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class="logoSns"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
             </div>
             <div class="inbox4">
-                앱 살펴보기랑 이것저것
+
+                <h4>앱 살펴보기</h4>
+                <h4>The House of Bang & Olufsen</h4>
+                <h6> c Bang & Olufsen 2021</h6>
             </div>
         </div>
     </div>

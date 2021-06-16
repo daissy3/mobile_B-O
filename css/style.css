@@ -11,6 +11,9 @@
   .items {
     display: none;
   }
+  .divb {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -396,7 +399,7 @@
   }
   body .divb .outbox {
     width: 90%;
-    height: 100vh;
+    height: 120vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -425,7 +428,7 @@
   }
   body .divb .outbox .inbox2 h4 {
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   body .divb .outbox .inbox2 h4::after {
     content: "";
@@ -438,6 +441,109 @@
   body .divb .outbox .inbox2 .a {
     width: 50%;
     height: 40vh;
+  }
+  body .divb .outbox .inbox2 .a .a1 {
+    width: 50%;
+    height: 20vh;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countrySelect {
+    height: 4vh;
+    width: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countrySelect .flagMain {
+    height: 20px;
+    width: 30px;
+    background: url(../img/flag/korea.png) no-repeat;
+    background-size: 30px;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countrySelect i {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #6e6e6e;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countryList {
+    display: none;
+    width: 22vh;
+    height: 13vh;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: scroll;
+    background: #f6f6f6;
+    border: 1px solid lightgray;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countryList ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countryList ul li img {
+    width: 30px;
+    height: 20px;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countryList ul li a {
+    font-size: 14px;
+    color: #6e6e6e;
+    padding: 0px 0px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  body .divb .outbox .inbox2 .a .a1 .countryList ul .lastLi a {
+    padding-bottom: 0px;
+  }
+  body .divb .outbox .inbox2 .a .a2 {
+    width: 50%;
+    height: 20vh;
+  }
+  body .divb .outbox .inbox2 .a .a2 .languageSelect {
+    height: 4vh;
+    width: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .divb .outbox .inbox2 .a .a2 .languageSelect h3 {
+    font-size: 14px;
+    font-weight: 100;
+    color: #737373;
+  }
+  body .divb .outbox .inbox2 .a .a2 .languageSelect i {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #6e6e6e;
+  }
+  body .divb .outbox .inbox2 .a .a2 .languageList {
+    display: none;
+    width: 13vh;
+    height: 13vh;
+    overflow: scroll;
+    background: #f6f6f6;
+    border: 1px solid lightgray;
+  }
+  body .divb .outbox .inbox2 .a .a2 .languageList ul li a {
+    font-size: 14px;
+    color: #6e6e6e;
+    padding: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
   }
   body .divb .outbox .inbox2 .b {
     width: 50%;
@@ -472,6 +578,46 @@
   }
   body .divb .outbox .inbox2 .d ul li {
     line-height: 25px;
+  }
+  body .divb .outbox .inbox3 ul {
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .divb .outbox .inbox3 ul li.logoSns a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 800 !important;
+  }
+  body .divb .outbox .inbox4 {
+    text-align: center;
+    color: #6e6e6e;
+    height: 15vh;
+  }
+  body .divb .outbox .inbox4 h4 {
+    font-size: 14px;
+    margin-bottom: 1vh;
+  }
+  body .divb .outbox .inbox4 h6 {
+    margin-top: 5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
