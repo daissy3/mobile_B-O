@@ -12,3 +12,14 @@ $(window).on('scroll', function () {
         $('.mainText2').removeClass('mainTextOpacity2');
     }
 });
+$(window).on('scroll', function () {
+    if( $(window).scrollTop() > 1450  ){
+        $('.mainNav').addClass('asd');
+        $('.slide').addClass('asdsfd');
+        $('.cartIcon').addClass('vsd');
+    }else{
+        $('.mainNav').removeClass('asd');
+        $('.slide').removeClass('asdsfd');
+        $('.cartIcon').removeClass('vsd');
+    }
+});
