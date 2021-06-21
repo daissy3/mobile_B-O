@@ -15,23 +15,42 @@
     <script src= "js/script.js" defer></script>
 </head>
 <body>
-    <p> (min-width: 320px) and (max-width: 480px) 로 확인하세요. <br>
-        개발자 모드 > iPhone 6/7/8 Plus 권장
-    </p>
-
+    <div class="plz">
+        <p class="plz"> 
+            (min-width: 320px) and (max-width: 480px) 로 확인하세요. <br>
+            개발자 모드 > iPhone 6/7/8 Plus 권장
+        </p>
+    </div>
     <!-- 
         6/17일 수정할 내용
         1. 메타태그
         2. class name 수정
         3. toggle 스크립트 작성
      -->
+
+
     <div class="main">
+        <div class="menuScreen">
+            <ul class="screenText">
+                <li> <a href="#">스피커</a></li>
+                <li><a href="#">헤드폰</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">액세서리</a></li>
+                <li><a href="#">스토리</a></li>
+            </ul>
+
+            <ul class="subText">
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> 매장검색</a></li>
+                <li><a href="#"><i class="far fa-question-circle"></i> 지원</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> 로그인 / 등록</a></li>
+            </ul>
+        </div>
         <div class="mainNav">
             <div class="rightNav">
                 <div class="hambergerMenu">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
+                    <div class="slide_top"></div>
+                    <div class="slide_hide"></div>
+                    <div class="slide_bottom"></div>
                 </div>
             </div>
             <div class="leftNav">
@@ -45,8 +64,8 @@
                 <h1>안내</h1>
                 <h2>Music gets you there</h2>
                 <p>솔로로 훈련하든 팀의 일원으로 훈련하든 음악은 우리가 최선을 다할 수 있도록 도와줍니다.</p>
-                <div class="text1">
-                    <div class="test2">
+                <div class="moreCheck">
+                    <div class="check">
                         <a href="#">자세히 알아보기</a>
                         <a href="#">→</a>
                     </div>
@@ -59,8 +78,8 @@
             <div class="mainText2">
                 <h2>Berluti x Bang & Olufsen</h2>
                 <p>세련된 라이프스타일에 어울리는 한정판 아이코닉 제품 컬렉션.</p>
-                <div class="text1">
-                    <div class="test2">
+                <div class="moreCheck">
+                    <div class="check">
                         <a href="#">자세히 알아보기</a>
                         <a href="#">→</a>
                     </div>
@@ -69,46 +88,41 @@
         </div>
     </div>
     <div class="items">
-        <div class="diva">
-            <div class="div1">
-                <div class="inner1"><h2>스피커</h2></div>
-                <div class="inner2"></div>
-                <div class="inner3"><h4>모두 보기 ></h4></div>
+        <div class="itemList">
+            <div class="speaker">
+                <div class="head"><h2>스피커</h2></div>
+                <div class="img"></div>
+                <div class="more"><h4>모두 보기 ></h4></div>
             </div>
-            <div class="div2">
-                <div class="inner1"><h2>헤드폰</h2></div>
-                <div class="inner2"></div>
-                <div class="inner3"><h4>모두 보기 ></h4></div>
+            <div class="headphone">
+                <div class="head"><h2>헤드폰</h2></div>
+                <div class="img"></div>
+                <div class="more"><h4>모두 보기 ></h4></div>
             </div>
-            <div class="div3">
-                <div class="inner1"><h2>TV</h2></div>
-                <div class="inner2"></div>
-                <div class="inner3"><h4>모두 보기 ></h4></div>
+            <div class="tv">
+                <div class="head"><h2>TV</h2></div>
+                <div class="img"></div>
+                <div class="more"><h4>모두 보기 ></h4></div>
             </div>
-            <div class="div4">
-                <div class="inner1"></div>
-                <div class="inner2"><h4>가입하기</h4></div>
-                <div class="inner3"><h4>당사의 글로벌 커뮤니티의 일원으로 가입하시고 특별한 혜택이 제공되는 세계를 누려보세요. </h4></div>
-                <div class="text1">
-                    <div class="test2">
+            <div class="signUp">
+                <div class="head"></div>
+                <div class="img"><h4>가입하기</h4></div>
+                <div class="more"><h4>당사의 글로벌 커뮤니티의 일원으로 가입하시고 특별한 혜택이 제공되는 세계를 누려보세요. </h4></div>
+                <div class="moreCheck">
+                    <div class="check">
                         <a href="#">자세히 알아보기</a>
                         <a href="#">→</a>
                     </div>
                 </div>
             </div>
-            <div class="div5"></div>
-            <div class="div6"></div>
         </div>
     </div>
-    <div class="divb">
-        <div class="outbox">
-            
-            <div class="inbox1">
-                
-            </div>
-            <div class="inbox2">
-                <div class="a"> 
-                    <div class="a1"> 
+    <div class="footer">
+        <div class="container">
+            <div class="logoMini"></div>
+            <div class="contents">
+                <div class="countryAndLanguage"> 
+                    <div class="country"> 
                         <h4>국가 / 지역</h4>
                         <div class="countrySelect">
                             <div class="flagMain"></div>
@@ -128,7 +142,7 @@
                         </div>
 
                     </div>
-                    <div class="a2"> 
+                    <div class="language"> 
                         <h4>언어</h4>
                         <div class="languageSelect">
                             <h3>한국어</h3>
@@ -151,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="b">
+                <div class="member">
                     <h4>고객 관리</h4>
                     <ul>
                         <li>로그인/등록</li>
@@ -163,7 +177,7 @@
                         <li>Submit feedback to our CEO</li>
                     </ul>
                 </div>
-                <div class="c">
+                <div class="company">
                     <h4>회사 정책</h4>
                     <ul>
                         <li>접근성</li>
@@ -173,7 +187,7 @@
                         <li>이용 약관</li>
                     </ul>
                 </div>
-                <div class="d">
+                <div class="introduce">
                     <h4>회사 소개</h4>
                     <ul>
                         <li>회사 소개</li>
@@ -187,7 +201,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="inbox3">
+            <div class="snsIcon">
                 <ul>
                     <li class="logoSns"><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li class="logoSns"><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -196,8 +210,7 @@
                     <li class="logoSns"><a href="#"><i class="fab fa-pinterest"></i></a></li>
                 </ul>
             </div>
-            <div class="inbox4">
-
+            <div class="address">
                 <h4>앱 살펴보기</h4>
                 <h4>The House of Bang & Olufsen</h4>
                 <h6> c Bang & Olufsen 2021</h6>

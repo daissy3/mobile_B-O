@@ -39,3 +39,27 @@ $('.countSel').on('click', function () {
         $('.languageList').hide();
      }
  });
+
+
+ $('.hambergerMenu').on('click', function () {
+    if( $('.slide_hide').css('display') === 'none'){
+        $('.slide_hide').show();
+        $('.slide_top').addClass('rotateTop2')
+        $('.slide_top').removeClass('rotateTop1')
+        $('.slide_bottom').addClass('rotateBottom2')
+        $('.slide_bottom').removeClass('rotateBottom1')
+        $('.menuScreen').removeClass('menuScreenT')
+        $('.screenText').fadeOut(10)
+        $('.subText').fadeOut(10)
+    }else{
+        $('.slide_hide').hide();
+        $('.slide_top').addClass('rotateTop1')
+        $('.slide_top').removeClass('rotateTop2')
+        $('.slide_bottom').addClass('rotateBottom1')
+        $('.slide_bottom').removeClass('rotateBottom2')
+        $('.menuScreen').addClass('menuScreenT')
+        $('.screenText').fadeIn(1000)
+        $('.subText').fadeIn(1000)
+     }
+ });
+
